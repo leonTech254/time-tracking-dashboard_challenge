@@ -1,0 +1,166 @@
+ *
+ {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;    
+ }
+
+body
+{
+    padding-top: 50px;
+    background-color: #1d204b;
+}
+
+.work_are_container
+{
+    width: 70%;
+    height: 80vh;
+    margin: auto;
+}
+.card  
+{
+    /* background-color: red; */
+    padding-top: 2rem;
+    position: relative;
+    z-index: -2;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 10px black;
+}
+
+
+.card .faded_image
+{
+    position: absolute;
+    top: .5rem;
+    right: 3rem;
+    width: 40px;
+    z-index: -1;
+}
+
+.inner_card
+{
+    padding: 20px;
+    background-color: #1d204b;
+    border-radius: .5rem 1rem 0 0 ;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+ .card_container
+ {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: "a b c d" "a f g h";
+    gap: .5rem;
+ }
+
+ .card.one
+ {
+    grid-area: a;
+ 
+ }
+.two
+{
+    grid-area: b;
+    background-color: #ff8b64;
+}
+.three
+{
+    background-color: #56c2e6;
+}
+.four
+{
+    background-color: #ff5e7d;
+}
+.five
+{
+    background-color: #4bcf83;
+}
+.six
+{
+    background-color: #7235d1;
+}
+.seven
+{
+    background-color: #f1c75b;
+}
+ .card_title
+ {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .card_title .title{
+    color: #fff;
+    font-weight: bold;
+ }
+ .inner_card .time
+ {
+    font-size: 45px;
+    color: #fff;
+
+ }
+ .inner_card .last_week
+ {
+    color: #fff;
+ }
+
+ /* big card */
+ .big_card
+ {
+    /* background-color: red; */
+    background-color: #1d204b;
+    padding: unset;
+ }
+ .big_card .inner_card
+ {
+    border-radius: 0;
+    height: 60%;
+    border-radius: 0 0 .5rem .5rem;
+    background-color: #5746ea;
+ }
+
+ .big_card img
+ {
+    width: unset;
+    width: 60px;
+    border: 2px solid white;
+    border-radius: 50%;
+ }
+ .big_card label
+ {
+    color: white;
+ }
+ .big_card .name
+ {
+    font-size: 30px;
+    color: #fff;
+ }
+
+ .big_card ul 
+ {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+ }
+
+ .big_card li
+ {
+    color: #ccccccf3;
+ }
+
+ .big_card .weekly
+ {
+    color: #fff;
+    font-weight: bold;
+ }
+
+ 
